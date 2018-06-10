@@ -4,6 +4,7 @@ import { HistoryInput, Location } from "@cycle/history";
 import { resolve } from "routes";
 import { pluck } from "utils/pluck";
 import { GithubSource } from "drivers/github";
+import { createElement } from "snabbdom-pragma";
 
 export interface Sources {
   dom: DOMSource;
