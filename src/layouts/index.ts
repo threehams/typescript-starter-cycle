@@ -1,5 +1,4 @@
-import { Stream } from 'xstream';
-import { Sources, Sinks } from 'components/App';
+import { Sources, Sinks } from "components/App";
 
 interface LayoutSources extends Sources {
   component: Partial<Sinks>;

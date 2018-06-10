@@ -1,12 +1,12 @@
-import { run } from '@cycle/run';
-import { App } from 'components/App';
-import { makeDOMDriver } from '@cycle/dom';
-import { captureClicks, makeHashHistoryDriver } from '@cycle/history';
-import { cssRaw } from 'typestyle';
-import { setupPage } from 'csstips';
-import { makeGithubDriver } from 'drivers/github';
+import { run } from "@cycle/run";
+import { App } from "components/App";
+import { makeDOMDriver } from "@cycle/dom";
+import { captureClicks, makeHashHistoryDriver } from "@cycle/history";
+import { cssRaw } from "typestyle";
+import { setupPage } from "csstips";
+import { makeGithubDriver } from "drivers/github";
 
-setupPage('#app');
+setupPage("#app");
 
 cssRaw(`
   #app {
@@ -29,7 +29,7 @@ cssRaw(`
 `);
 
 run(App, {
-  dom: makeDOMDriver('#app'),
+  dom: makeDOMDriver("#app"),
   history: captureClicks(makeHashHistoryDriver()),
   github: makeGithubDriver()
 });

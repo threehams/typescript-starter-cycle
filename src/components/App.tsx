@@ -17,13 +17,11 @@ export interface Sinks {
   github: Stream<string>;
 }
 
-const xs = Stream;
-
 export const App = (sources: Sources): Sinks => {
   const app$ = sources.history
     .map(location => resolve(location.pathname))
     .map(({ getComponent, getLayout, ...resolution }) =>
-      xs.fromPromise(
+      Stream.fromPromise(
         getComponent()
           .then(Component =>
             Component({ ...sources, ...(resolution.sources || {}) })

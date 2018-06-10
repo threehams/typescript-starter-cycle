@@ -1,7 +1,6 @@
 import { Layout } from "./";
 import { Header } from "components/Header";
 import { Stream } from "xstream";
-import { header, main } from "@cycle/dom";
 import { createElement } from "snabbdom-pragma";
 
 export const HeaderLayout: Layout = ({
@@ -15,9 +14,9 @@ export const HeaderLayout: Layout = ({
     componentDom || Stream.empty()
   ).map(([headerDom, component]) => (
     <div>
-      {header(headerDom)}
+      <header>{headerDom}</header>
       <hr />
-      {main(component)}
+      <main>{component}</main>
     </div>
   ));
   return {

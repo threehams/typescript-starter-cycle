@@ -25,32 +25,33 @@
   },
   "homepage": "https://github.com/cyclejs-community/typescript-starter-cycle",
   "dependencies": {
-    "@cycle/dom": "^18.3.0",
-    "@cycle/history": "^6.4.0",
-    "@cycle/http": "^14.5.0",
-    "@cycle/isolate": "^3.1.0",
-    "@cycle/run": "^3.3.0",
+    "@cycle/dom": "^20.4.0",
+    "@cycle/history": "^6.10.0",
+    "@cycle/http": "^14.9.0",
+    "@cycle/isolate": "^3.3.0",
+    "@cycle/run": "^4.1.0",
     "@types/history": "^4.6.2",
-    "csstips": "^0.2.2",
-    "csx": "^8.5.0",
+    "classnames": "^2.2.6",
+    "csstips": "^0.3.0",
+    "csx": "^9.0.0",
     "ramda": "^0.25.0",
     "snabbdom-pragma": "^2.7.0",
     "switch-path": "^1.2.0",
-    "typestyle": "^1.4.3",
-    "xstream": "^11.0.0"
+    "typestyle": "^2.0.1",
+    "xstream": "^11.4.0"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^4.1.1",
-    "cross-env": "^5.1.0",
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.1.6",
     "html-webpack-plugin": "^2.30.1",
     "prettier": "^1.13.5",
-    "source-map-loader": "^0.2.2",
+    "source-map-loader": "^0.2.3",
     "ts-loader": "^3.0.2",
-    "typescript": "^2.5.3",
-    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+    "typescript": "^2.9.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^3.8.1",
     "webpack-cleanup-plugin": "^0.5.1",
     "webpack-dev-server": "^2.9.2",
-    "yargs": "^9.0.1"
+    "yargs": "^11.0.0"
   }
 }
