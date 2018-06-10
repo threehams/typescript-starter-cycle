@@ -8,5 +8,6 @@
         "dist": true,
         "**/*.js": { "when": "$(basename).ts"},
         "**/*.js.map": true
-    }
+    },
+    "editor.formatOnSave": true
 }
